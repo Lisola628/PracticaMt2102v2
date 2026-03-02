@@ -1,0 +1,2025 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)file:///Users/liliana/Downloads/SPAN2102_AccessibleExam_v2_1.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>SPAN 2102 — Examen de Práctica v2 | Caps. 15 y 16</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#111;--bg:#fafaf8;--mid:#555;--rule:#ddd;--focus:#6a1b9a;--focus-bg:#f3f0ff;--opt-bg:#fff;--opt-border:#ccc;--opt-hover:#f5f0ff;--opt-checked-bg:#eef0ff;--opt-checked-border:#6a1b9a;--radius:8px;--font-base:18px}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',system-ui,sans-serif;font-size:var(--font-base);line-height:1.9;color:var(--ink);background:var(--bg)}
+body.sz-lg{--font-base:21px}body.sz-xl{--font-base:25px}
+body.high-contrast{--ink:#fff;--bg:#000;--mid:#ccc;--rule:#888;--opt-bg:#111;--opt-border:#888;--opt-hover:#0a0a1a;--opt-checked-bg:#0a0a1a;--opt-checked-border:#aac4ff;--focus:#ffdd57;--focus-bg:#1a1500}
+body.high-contrast .sec-header{border-bottom:2px solid #888}
+body.high-contrast .subsec-heading,.high-contrast .q-num,.high-contrast .opt-letter{color:#aac4ff}
+body.high-contrast .a11y-bar,.high-contrast .submit-bar{background:#111;border-color:#888}
+body.high-contrast .a11y-btn{border-color:#888;color:#e0e0e0}
+body.high-contrast .info-box{background:#111!important;border-left-color:#888!important;color:#e0e0e0}
+body.high-contrast .sec-nav{background:#111;border:1px solid #888}
+body.high-contrast .sec-nav a{background:#000;color:#aac4ff;border-color:#888}
+body.high-contrast textarea{background:#111;border-color:#888;color:#fff}
+body.high-contrast .written-section{border-color:#888}
+.skip-link{position:absolute;top:-100px;left:0;background:var(--focus);color:#fff;padding:12px 20px;font-weight:700;font-size:16px;z-index:9999;border-radius:0 0 8px 0;text-decoration:none}
+.skip-link:focus{top:0}
+.a11y-bar{position:sticky;top:0;z-index:200;background:#fff;border-bottom:2px solid var(--rule);padding:10px 24px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.toolbar-inner{display:flex;align-items:center;gap:10px}
+.a11y-label{font-size:13px;font-weight:600;color:var(--mid);text-transform:uppercase;letter-spacing:.05em}
+.a11y-btn{border:2px solid #ccc;background:#fff;color:#333;padding:7px 14px;border-radius:6px;font-size:14px;cursor:pointer;font-family:inherit;transition:all .15s}
+.a11y-btn:hover{border-color:var(--focus);color:var(--focus)}
+.a11y-btn:focus{outline:3px solid var(--focus);outline-offset:2px}
+.a11y-btn[aria-pressed="true"],.a11y-btn[aria-current="true"]{background:var(--focus);color:#fff;border-color:var(--focus)}
+.toolbar-sep{width:1px;height:28px;background:var(--rule);margin:0 4px}
+.prog-wrap{margin-left:auto;display:flex;align-items:center;gap:10px}
+.prog-count{font-size:13px;color:var(--mid)}
+.prog-track{width:140px;height:8px;background:#e0e0e0;border-radius:4px;overflow:hidden}
+.prog-bar{height:100%;background:var(--focus);border-radius:4px;width:0%;transition:width .3s}
+.page-wrap{max-width:820px;margin:0 auto;padding:24px 24px 80px}
+.exam-header{margin-bottom:32px;padding:24px;background:#4a148c;color:#fff;border-radius:12px}
+.exam-header h1{font-size:1.6em;margin-bottom:8px}
+.exam-header .subtitle{opacity:.85;font-size:.95em}
+.exam-header .meta{margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.meta-field{background:rgba(255,255,255,.15);border-radius:6px;padding:8px 12px;font-size:.9em}
+.meta-field label{display:block;font-size:.75em;opacity:.7;margin-bottom:2px;text-transform:uppercase;letter-spacing:.05em}
+.meta-input{background:transparent;border:none;border-bottom:1px solid rgba(255,255,255,.5);color:#fff;font-size:1em;width:100%;outline:none;font-family:inherit;padding:2px 0}
+.meta-input:focus{border-bottom-color:#fff;outline:2px solid rgba(255,255,255,.4);outline-offset:2px}
+.sec-nav{background:#f0f0f0;border-radius:8px;padding:14px 18px;margin-bottom:24px}
+.sec-nav p{font-weight:700;font-size:.9em;color:var(--mid);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}
+.sec-nav ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.sec-nav a{display:inline-block;padding:6px 14px;border-radius:6px;font-size:.9em;background:#fff;border:2px solid #ccc;color:var(--focus);text-decoration:none;font-weight:600}
+.sec-nav a:hover{border-color:var(--focus);background:var(--focus-bg)}
+.sec-nav a:focus{outline:3px solid var(--focus);outline-offset:2px}
+.info-box{background:#f5f0ff;border-left:4px solid var(--focus);border-radius:0 8px 8px 0;padding:12px 16px;margin:12px 0 18px;font-size:.92em}
+.exam-section{margin-bottom:40px;border-radius:12px;overflow:hidden;border:1px solid var(--rule)}
+.sec-header{padding:16px 22px;color:#fff;display:flex;justify-content:space-between;align-items:center}
+.sec-header h2{font-size:1.05em;margin:0}
+.sec-range{font-size:.85em;opacity:.8;white-space:nowrap;margin-left:12px}
+.subsec{padding:20px 22px 8px}
+.subsec-heading{font-size:.95em;font-weight:700;color:#6a1b9a;border-bottom:2px solid #6a1b9a;padding-bottom:6px;margin-bottom:16px}
+fieldset.question{border:1px solid var(--rule);border-radius:var(--radius);margin-bottom:16px;background:var(--opt-bg);padding:0}
+fieldset.question:focus-within{border-color:var(--focus);box-shadow:0 0 0 3px var(--focus-bg)}
+fieldset.question legend{padding:14px 18px 10px;display:flex;gap:10px;align-items:baseline;font-size:1em;line-height:1.6;width:100%}
+.q-num{font-family:'Courier New',monospace;font-weight:700;color:#6a1b9a;font-size:.9em;white-space:nowrap;flex-shrink:0}
+.options{padding:4px 16px 14px}
+.option{display:flex;align-items:center;gap:12px;padding:11px 14px;border-radius:6px;cursor:pointer;border:2px solid transparent;margin-bottom:6px;transition:background .1s,border-color .1s;background:var(--opt-bg)}
+.option:hover{background:var(--opt-hover);border-color:#c5cae9}
+.option:has(input:checked){background:var(--opt-checked-bg);border-color:var(--opt-checked-border)}
+.option:has(input:focus){outline:3px solid var(--focus);outline-offset:1px}
+input[type=radio]{width:20px;height:20px;flex-shrink:0;cursor:pointer;accent-color:var(--focus)}
+.opt-letter{font-family:'Courier New',monospace;font-weight:700;font-size:.88em;color:#6a1b9a;min-width:18px;flex-shrink:0}
+.written-section{margin-top:32px;border:2px dashed #ccc;border-radius:12px;padding:24px}
+.written-section h2{font-size:1.1em;color:#6a1b9a;margin-bottom:16px}
+.written-q{margin-bottom:24px}
+.written-q p{margin-bottom:10px;font-weight:600}
+textarea{width:100%;min-height:80px;padding:10px;border:2px solid #ccc;border-radius:6px;font-family:inherit;font-size:1em;resize:vertical;background:var(--opt-bg);color:var(--ink)}
+textarea:focus{outline:3px solid var(--focus);border-color:var(--focus)}
+.submit-bar{position:sticky;bottom:0;background:#fff;border-top:2px solid var(--rule);padding:14px 24px;display:flex;align-items:center;gap:16px}
+.submit-btn{background:#4a148c;color:#fff;border:none;padding:12px 28px;border-radius:8px;font-size:1em;font-weight:700;cursor:pointer;font-family:inherit}
+.submit-btn:hover{filter:brightness(1.15)}
+.submit-btn:focus{outline:3px solid var(--focus);outline-offset:2px}
+.submit-note{font-size:.88em;color:var(--mid)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:600px){.page-wrap{padding:16px 12px 80px}.prog-wrap{display:none}.exam-header .meta{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<a href="file:///Users/liliana/Downloads/SPAN2102_AccessibleExam_v2_1.html#main-content" class="skip-link">Skip to exam questions</a>
+<div id="live-announce" aria-live="polite" aria-atomic="true" class="sr-only"></div>
+<div id="live-progress" aria-live="polite" aria-atomic="true" class="sr-only"></div>
+<div class="a11y-bar" role="toolbar" aria-label="Accessibility options">
+  <div class="toolbar-inner">
+    <span class="a11y-label">Text size:</span>
+    <button class="a11y-btn sz-btn" id="sz-nm" onclick="setSize(&#39;nm&#39;)" aria-current="true" aria-label="Normal text size">A</button>
+    <button class="a11y-btn sz-btn" id="sz-lg" onclick="setSize(&#39;lg&#39;)" aria-label="Large text">A+</button>
+    <button class="a11y-btn sz-btn" id="sz-xl" onclick="setSize(&#39;xl&#39;)" aria-label="Extra large text">A++</button>
+  </div>
+  <div class="toolbar-sep" aria-hidden="true"></div>
+  <button class="a11y-btn" id="hc-btn" onclick="toggleHC()" aria-pressed="false" aria-label="Toggle high contrast mode">◑ High contrast</button>
+  <div class="prog-wrap" aria-hidden="true">
+    <span class="prog-count" id="prog-count">0 of 63 reviewed</span>
+    <div class="prog-track">
+      <div class="prog-bar" id="prog-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Progress through exam"></div>
+    </div>
+  </div>
+</div>
+<main id="main-content" tabindex="-1">
+<div class="page-wrap">
+<header class="exam-header">
+  <h1>SPAN 2102 — Examen de Práctica</h1>
+  <p class="subtitle">Capítulos 15 y 16 | Spring 2026 | Práctica Gradescope — Versión 2</p>
+  <div class="meta">
+    <div class="meta-field"><label for="f-nombre">Nombre</label><input type="text" id="f-nombre" class="meta-input" autocomplete="name" aria-label="Your name"></div>
+    <div class="meta-field"><label for="f-email">Email</label><input type="email" id="f-email" class="meta-input" autocomplete="email" aria-label="Your email"></div>
+    <div class="meta-field"><label for="f-seccion">Sección</label><input type="text" id="f-seccion" class="meta-input" aria-label="Your section"></div>
+    <div class="meta-field"><label for="f-fecha">Fecha</label><input type="date" id="f-fecha" class="meta-input" aria-label="Today&#39;s date"></div>
+  </div>
+</header>
+<div class="info-box" role="note" aria-label="General instructions">
+  <p><strong>How to complete this exam:</strong> Read each question here on screen. Mark your answers on your <strong>paper scantron</strong>. When finished, take a clear photo or scan of your completed scantron and upload it to Moodle by the due date.</p>
+  <p><strong>Tip for screen reader users:</strong> Use the section links below to jump to any section. Within each question, use arrow keys to move between options.</p>
+</div>
+<nav class="sec-nav" aria-label="Jump to section">
+  <p id="sec-nav-label">Jump to section:</p>
+  <ul aria-labelledby="sec-nav-label">
+    <li><a href="file:///Users/liliana/Downloads/SPAN2102_AccessibleExam_v2_1.html#secI">Section I — Past Participle (Q1–12)</a></li>
+    <li><a href="file:///Users/liliana/Downloads/SPAN2102_AccessibleExam_v2_1.html#secII">Section II — Present Perfect (Q13–24)</a></li>
+    <li><a href="file:///Users/liliana/Downloads/SPAN2102_AccessibleExam_v2_1.html#secIII">Section III — Subjunctive: Indefinite Antecedents (Q25–38)</a></li>
+    <li><a href="file:///Users/liliana/Downloads/SPAN2102_AccessibleExam_v2_1.html#secIV">Section IV — Mixed Vocab: True/False + Definitions (Q39–55)</a></li>
+    <li><a href="file:///Users/liliana/Downloads/SPAN2102_AccessibleExam_v2_1.html#secV">Section V — Past Perfect &amp; Present Perfect Subjunctive (Q56–63)</a></li>
+    <li><a href="file:///Users/liliana/Downloads/SPAN2102_AccessibleExam_v2_1.html#sec-cultura">Section VI — Cultura (written)</a></li>
+  </ul>
+</nav>
+<form id="exam-form" novalidate="" aria-label="SPAN 2102 practice exam version 2">
+
+<section class="exam-section" id="secI" aria-labelledby="secI-h">
+  <div class="sec-header" style="background:#7b1fa2">
+    <h2 id="secI-h">Sección I — Cap. 15: Participio Pasado en Contexto</h2>
+    <span class="sec-range">Questions 1–12</span>
+  </div>
+  <div class="subsec" id="sub-I-A" aria-labelledby="sub-I-A-h">
+    <h3 id="sub-I-A-h" class="subsec-heading">Parte A: Participio como adjetivo (concuerda en género y número)</h3>
+
+    <fieldset class="question" id="q1" aria-describedby="q1-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 1">Q1.</span>
+        <span class="q-text">Las ventanas del edificio nuevo están _______ (abrir) para ventilar el apartamento.</span>
+      </legend>
+      <p id="q1-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 1">
+        <label class="option" for="q1-a">
+          <input type="radio" id="q1-a" name="q1" value="A" aria-label="Option A: abridas">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">abridas</span>
+        </label>
+        <label class="option" for="q1-b">
+          <input type="radio" id="q1-b" name="q1" value="B" aria-label="Option B: abierto">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">abierto</span>
+        </label>
+        <label class="option" for="q1-c">
+          <input type="radio" id="q1-c" name="q1" value="C" aria-label="Option C: abiertas">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">abiertas</span>
+        </label>
+        <label class="option" for="q1-d">
+          <input type="radio" id="q1-d" name="q1" value="D" aria-label="Option D: abridos">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">abridos</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q2" aria-describedby="q2-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 2">Q2.</span>
+        <span class="q-text">El informe medioambiental ya está _______ (escribir) por los científicos.</span>
+      </legend>
+      <p id="q2-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 2">
+        <label class="option" for="q2-a">
+          <input type="radio" id="q2-a" name="q2" value="A" aria-label="Option A: escribido">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">escribido</span>
+        </label>
+        <label class="option" for="q2-b">
+          <input type="radio" id="q2-b" name="q2" value="B" aria-label="Option B: escrita">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">escrita</span>
+        </label>
+        <label class="option" for="q2-c">
+          <input type="radio" id="q2-c" name="q2" value="C" aria-label="Option C: escrito">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">escrito</span>
+        </label>
+        <label class="option" for="q2-d">
+          <input type="radio" id="q2-d" name="q2" value="D" aria-label="Option D: escribta">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">escribta</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q3" aria-describedby="q3-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 3">Q3.</span>
+        <span class="q-text">Las especies del parque nacional están muy _______ (proteger) por la ley.</span>
+      </legend>
+      <p id="q3-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 3">
+        <label class="option" for="q3-a">
+          <input type="radio" id="q3-a" name="q3" value="A" aria-label="Option A: protegidos">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">protegidos</span>
+        </label>
+        <label class="option" for="q3-b">
+          <input type="radio" id="q3-b" name="q3" value="B" aria-label="Option B: protegida">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">protegida</span>
+        </label>
+        <label class="option" for="q3-c">
+          <input type="radio" id="q3-c" name="q3" value="C" aria-label="Option C: protegido">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">protegido</span>
+        </label>
+        <label class="option" for="q3-d">
+          <input type="radio" id="q3-d" name="q3" value="D" aria-label="Option D: protegidas">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">protegidas</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q4" aria-describedby="q4-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 4">Q4.</span>
+        <span class="q-text">Los contratos de arrendamiento ya están _______ (hacer) por el propietario.</span>
+      </legend>
+      <p id="q4-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 4">
+        <label class="option" for="q4-a">
+          <input type="radio" id="q4-a" name="q4" value="A" aria-label="Option A: hacidos">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">hacidos</span>
+        </label>
+        <label class="option" for="q4-b">
+          <input type="radio" id="q4-b" name="q4" value="B" aria-label="Option B: hechos">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">hechos</span>
+        </label>
+        <label class="option" for="q4-c">
+          <input type="radio" id="q4-c" name="q4" value="C" aria-label="Option C: haciéndose">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">haciéndose</span>
+        </label>
+        <label class="option" for="q4-d">
+          <input type="radio" id="q4-d" name="q4" value="D" aria-label="Option D: hacido">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">hacido</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q5" aria-describedby="q5-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 5">Q5.</span>
+        <span class="q-text">La puerta del refugio de animales permanece _______ (cerrar) los fines de semana.</span>
+      </legend>
+      <p id="q5-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 5">
+        <label class="option" for="q5-a">
+          <input type="radio" id="q5-a" name="q5" value="A" aria-label="Option A: cerradas">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">cerradas</span>
+        </label>
+        <label class="option" for="q5-b">
+          <input type="radio" id="q5-b" name="q5" value="B" aria-label="Option B: cerrido">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">cerrido</span>
+        </label>
+        <label class="option" for="q5-c">
+          <input type="radio" id="q5-c" name="q5" value="C" aria-label="Option C: cerrado">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">cerrado</span>
+        </label>
+        <label class="option" for="q5-d">
+          <input type="radio" id="q5-d" name="q5" value="D" aria-label="Option D: cerrando">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">cerrando</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q6" aria-describedby="q6-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 6">Q6.</span>
+        <span class="q-text">Los paneles solares de la casa están _______ (poner) en el techo desde el año pasado.</span>
+      </legend>
+      <p id="q6-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 6">
+        <label class="option" for="q6-a">
+          <input type="radio" id="q6-a" name="q6" value="A" aria-label="Option A: ponados">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">ponados</span>
+        </label>
+        <label class="option" for="q6-b">
+          <input type="radio" id="q6-b" name="q6" value="B" aria-label="Option B: ponidos">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">ponidos</span>
+        </label>
+        <label class="option" for="q6-c">
+          <input type="radio" id="q6-c" name="q6" value="C" aria-label="Option C: puesto">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">puesto</span>
+        </label>
+        <label class="option" for="q6-d">
+          <input type="radio" id="q6-d" name="q6" value="D" aria-label="Option D: puestos">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">puestos</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q7" aria-describedby="q7-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 7">Q7.</span>
+        <span class="q-text">Los tubos de agua del apartamento estaban _______ (romper) durante el invierno.</span>
+      </legend>
+      <p id="q7-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 7">
+        <label class="option" for="q7-a">
+          <input type="radio" id="q7-a" name="q7" value="A" aria-label="Option A: rompidos">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">rompidos</span>
+        </label>
+        <label class="option" for="q7-b">
+          <input type="radio" id="q7-b" name="q7" value="B" aria-label="Option B: rompiendo">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">rompiendo</span>
+        </label>
+        <label class="option" for="q7-c">
+          <input type="radio" id="q7-c" name="q7" value="C" aria-label="Option C: rotados">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">rotados</span>
+        </label>
+        <label class="option" for="q7-d">
+          <input type="radio" id="q7-d" name="q7" value="D" aria-label="Option D: rotos">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">rotos</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q8" aria-describedby="q8-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 8">Q8.</span>
+        <span class="q-text">Las propuestas para reducir la contaminación ya están _______ (resolver).</span>
+      </legend>
+      <p id="q8-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 8">
+        <label class="option" for="q8-a">
+          <input type="radio" id="q8-a" name="q8" value="A" aria-label="Option A: resolvidas">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">resolvidas</span>
+        </label>
+        <label class="option" for="q8-b">
+          <input type="radio" id="q8-b" name="q8" value="B" aria-label="Option B: resueltas">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">resueltas</span>
+        </label>
+        <label class="option" for="q8-c">
+          <input type="radio" id="q8-c" name="q8" value="C" aria-label="Option C: resolvidas">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">resolvidas</span>
+        </label>
+        <label class="option" for="q8-d">
+          <input type="radio" id="q8-d" name="q8" value="D" aria-label="Option D: resoluto">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">resoluto</span>
+        </label>
+      </div>
+    </fieldset>  </div>
+  <div class="subsec" id="sub-I-B" aria-labelledby="sub-I-B-h">
+    <h3 id="sub-I-B-h" class="subsec-heading">Parte B: Participio en el presente perfecto (con HABER)</h3>
+
+    <fieldset class="question" id="q9" aria-describedby="q9-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 9">Q9.</span>
+        <span class="q-text">Mis vecinos _______ (mudarse) a un barrio más ecológico este mes.</span>
+      </legend>
+      <p id="q9-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 9">
+        <label class="option" for="q9-a">
+          <input type="radio" id="q9-a" name="q9" value="A" aria-label="Option A: han mudados">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">han mudados</span>
+        </label>
+        <label class="option" for="q9-b">
+          <input type="radio" id="q9-b" name="q9" value="B" aria-label="Option B: se han mudado">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">se han mudado</span>
+        </label>
+        <label class="option" for="q9-c">
+          <input type="radio" id="q9-c" name="q9" value="C" aria-label="Option C: se hemos mudado">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">se hemos mudado</span>
+        </label>
+        <label class="option" for="q9-d">
+          <input type="radio" id="q9-d" name="q9" value="D" aria-label="Option D: ha mudado">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">ha mudado</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q10" aria-describedby="q10-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 10">Q10.</span>
+        <span class="q-text">La organización ecologista _______ (hacer) mucho por el medio ambiente este año.</span>
+      </legend>
+      <p id="q10-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 10">
+        <label class="option" for="q10-a">
+          <input type="radio" id="q10-a" name="q10" value="A" aria-label="Option A: ha hecho">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">ha hecho</span>
+        </label>
+        <label class="option" for="q10-b">
+          <input type="radio" id="q10-b" name="q10" value="B" aria-label="Option B: ha hacido">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">ha hacido</span>
+        </label>
+        <label class="option" for="q10-c">
+          <input type="radio" id="q10-c" name="q10" value="C" aria-label="Option C: han hecho">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">han hecho</span>
+        </label>
+        <label class="option" for="q10-d">
+          <input type="radio" id="q10-d" name="q10" value="D" aria-label="Option D: hemos hecho">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">hemos hecho</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q11" aria-describedby="q11-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 11">Q11.</span>
+        <span class="q-text">Yo nunca _______ (ver) tanta contaminación en un río antes de este viaje.</span>
+      </legend>
+      <p id="q11-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 11">
+        <label class="option" for="q11-a">
+          <input type="radio" id="q11-a" name="q11" value="A" aria-label="Option A: he visto">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">he visto</span>
+        </label>
+        <label class="option" for="q11-b">
+          <input type="radio" id="q11-b" name="q11" value="B" aria-label="Option B: he vido">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">he vido</span>
+        </label>
+        <label class="option" for="q11-c">
+          <input type="radio" id="q11-c" name="q11" value="C" aria-label="Option C: hemos visto">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">hemos visto</span>
+        </label>
+        <label class="option" for="q11-d">
+          <input type="radio" id="q11-d" name="q11" value="D" aria-label="Option D: ha visto">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">ha visto</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q12" aria-describedby="q12-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 12">Q12.</span>
+        <span class="q-text">¿Tú alguna vez _______ (comprometerse) con alguien que conociste por internet?</span>
+      </legend>
+      <p id="q12-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 12">
+        <label class="option" for="q12-a">
+          <input type="radio" id="q12-a" name="q12" value="A" aria-label="Option A: te ha comprometido">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">te ha comprometido</span>
+        </label>
+        <label class="option" for="q12-b">
+          <input type="radio" id="q12-b" name="q12" value="B" aria-label="Option B: te hemos comprometido">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">te hemos comprometido</span>
+        </label>
+        <label class="option" for="q12-c">
+          <input type="radio" id="q12-c" name="q12" value="C" aria-label="Option C: te has comprometido">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">te has comprometido</span>
+        </label>
+        <label class="option" for="q12-d">
+          <input type="radio" id="q12-d" name="q12" value="D" aria-label="Option D: has comprometido">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">has comprometido</span>
+        </label>
+      </div>
+    </fieldset>  </div>
+</section>
+
+<section class="exam-section" id="secII" aria-labelledby="secII-h">
+  <div class="sec-header" style="background:#1565c0">
+    <h2 id="secII-h">Sección II — Cap. 15: Presente Perfecto en Contexto</h2>
+    <span class="sec-range">Questions 13–24</span>
+  </div>
+  <div class="subsec" id="sub-II-A" aria-labelledby="sub-II-A-h">
+    <h3 id="sub-II-A-h" class="subsec-heading">Parte A: Formación y uso</h3>
+
+    <fieldset class="question" id="q13" aria-describedby="q13-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 13">Q13.</span>
+        <span class="q-text">Los jóvenes de la ciudad _______ (unirse) al movimiento ecologista este semestre.</span>
+      </legend>
+      <p id="q13-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 13">
+        <label class="option" for="q13-a">
+          <input type="radio" id="q13-a" name="q13" value="A" aria-label="Option A: se ha unido">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">se ha unido</span>
+        </label>
+        <label class="option" for="q13-b">
+          <input type="radio" id="q13-b" name="q13" value="B" aria-label="Option B: se han unido">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">se han unido</span>
+        </label>
+        <label class="option" for="q13-c">
+          <input type="radio" id="q13-c" name="q13" value="C" aria-label="Option C: se han unidos">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">se han unidos</span>
+        </label>
+        <label class="option" for="q13-d">
+          <input type="radio" id="q13-d" name="q13" value="D" aria-label="Option D: nos han unido">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">nos han unido</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q14" aria-describedby="q14-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 14">Q14.</span>
+        <span class="q-text">Mis abuelos _______ (separarse) después de cuarenta años de matrimonio.</span>
+      </legend>
+      <p id="q14-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 14">
+        <label class="option" for="q14-a">
+          <input type="radio" id="q14-a" name="q14" value="A" aria-label="Option A: se han separado">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">se han separado</span>
+        </label>
+        <label class="option" for="q14-b">
+          <input type="radio" id="q14-b" name="q14" value="B" aria-label="Option B: han separado">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">han separado</span>
+        </label>
+        <label class="option" for="q14-c">
+          <input type="radio" id="q14-c" name="q14" value="C" aria-label="Option C: se ha separado">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">se ha separado</span>
+        </label>
+        <label class="option" for="q14-d">
+          <input type="radio" id="q14-d" name="q14" value="D" aria-label="Option D: han separados">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">han separados</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q15" aria-describedby="q15-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 15">Q15.</span>
+        <span class="q-text">Nosotros nunca _______ (vivir) en un barrio tan contaminado como este.</span>
+      </legend>
+      <p id="q15-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 15">
+        <label class="option" for="q15-a">
+          <input type="radio" id="q15-a" name="q15" value="A" aria-label="Option A: hemos vivido">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">hemos vivido</span>
+        </label>
+        <label class="option" for="q15-b">
+          <input type="radio" id="q15-b" name="q15" value="B" aria-label="Option B: hemos vivido">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">hemos vivido</span>
+        </label>
+        <label class="option" for="q15-c">
+          <input type="radio" id="q15-c" name="q15" value="C" aria-label="Option C: hayamos vivido">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">hayamos vivido</span>
+        </label>
+        <label class="option" for="q15-d">
+          <input type="radio" id="q15-d" name="q15" value="D" aria-label="Option D: habemos vivido">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">habemos vivido</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q16" aria-describedby="q16-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 16">Q16.</span>
+        <span class="q-text">¿Ustedes _______ (hablar) ya con el arquitecto sobre el diseño del edificio?</span>
+      </legend>
+      <p id="q16-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 16">
+        <label class="option" for="q16-a">
+          <input type="radio" id="q16-a" name="q16" value="A" aria-label="Option A: han hablado">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">han hablado</span>
+        </label>
+        <label class="option" for="q16-b">
+          <input type="radio" id="q16-b" name="q16" value="B" aria-label="Option B: hayan hablado">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">hayan hablado</span>
+        </label>
+        <label class="option" for="q16-c">
+          <input type="radio" id="q16-c" name="q16" value="C" aria-label="Option C: hemos hablado">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">hemos hablado</span>
+        </label>
+        <label class="option" for="q16-d">
+          <input type="radio" id="q16-d" name="q16" value="D" aria-label="Option D: han hablando">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">han hablando</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q17" aria-describedby="q17-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 17">Q17.</span>
+        <span class="q-text">Yo todavía no _______ (abrir) la carta de mi compañero de piso.</span>
+      </legend>
+      <p id="q17-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 17">
+        <label class="option" for="q17-a">
+          <input type="radio" id="q17-a" name="q17" value="A" aria-label="Option A: he abierto">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">he abierto</span>
+        </label>
+        <label class="option" for="q17-b">
+          <input type="radio" id="q17-b" name="q17" value="B" aria-label="Option B: he abrido">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">he abrido</span>
+        </label>
+        <label class="option" for="q17-c">
+          <input type="radio" id="q17-c" name="q17" value="C" aria-label="Option C: haya abierto">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">haya abierto</span>
+        </label>
+        <label class="option" for="q17-d">
+          <input type="radio" id="q17-d" name="q17" value="D" aria-label="Option D: había abierto">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">había abierto</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q18" aria-describedby="q18-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 18">Q18.</span>
+        <span class="q-text">El ayuntamiento _______ (poner) nuevos contenedores de reciclaje en el barrio.</span>
+      </legend>
+      <p id="q18-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 18">
+        <label class="option" for="q18-a">
+          <input type="radio" id="q18-a" name="q18" value="A" aria-label="Option A: ha puesto">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">ha puesto</span>
+        </label>
+        <label class="option" for="q18-b">
+          <input type="radio" id="q18-b" name="q18" value="B" aria-label="Option B: ha ponido">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">ha ponido</span>
+        </label>
+        <label class="option" for="q18-c">
+          <input type="radio" id="q18-c" name="q18" value="C" aria-label="Option C: haya puesto">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">haya puesto</span>
+        </label>
+        <label class="option" for="q18-d">
+          <input type="radio" id="q18-d" name="q18" value="D" aria-label="Option D: había puesto">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">había puesto</span>
+        </label>
+      </div>
+    </fieldset>  </div>
+  <div class="subsec" id="sub-II-B" aria-labelledby="sub-II-B-h">
+    <h3 id="sub-II-B-h" class="subsec-heading">Parte B: Adverbios y contraste pretérito / presente perfecto</h3>
+
+    <fieldset class="question" id="q19" aria-describedby="q19-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 19">Q19.</span>
+        <span class="q-text">¿Cuál de estos adverbios indica que la acción SÍ ha ocurrido?</span>
+      </legend>
+      <p id="q19-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 19">
+        <label class="option" for="q19-a">
+          <input type="radio" id="q19-a" name="q19" value="A" aria-label="Option A: Todavía no">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">Todavía no</span>
+        </label>
+        <label class="option" for="q19-b">
+          <input type="radio" id="q19-b" name="q19" value="B" aria-label="Option B: Nunca">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">Nunca</span>
+        </label>
+        <label class="option" for="q19-c">
+          <input type="radio" id="q19-c" name="q19" value="C" aria-label="Option C: Ya">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">Ya</span>
+        </label>
+        <label class="option" for="q19-d">
+          <input type="radio" id="q19-d" name="q19" value="D" aria-label="Option D: Jamás">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">Jamás</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q20" aria-describedby="q20-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 20">Q20.</span>
+        <span class="q-text">¿Alguna vez _______ (vivir) en otro país por más de un año? — verb: vivir</span>
+      </legend>
+      <p id="q20-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 20">
+        <label class="option" for="q20-a">
+          <input type="radio" id="q20-a" name="q20" value="A" aria-label="Option A: vivías">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">vivías</span>
+        </label>
+        <label class="option" for="q20-b">
+          <input type="radio" id="q20-b" name="q20" value="B" aria-label="Option B: vivido">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">vivido</span>
+        </label>
+        <label class="option" for="q20-c">
+          <input type="radio" id="q20-c" name="q20" value="C" aria-label="Option C: has vivido">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">has vivido</span>
+        </label>
+        <label class="option" for="q20-d">
+          <input type="radio" id="q20-d" name="q20" value="D" aria-label="Option D: habías vivido">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">habías vivido</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q21" aria-describedby="q21-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 21">Q21.</span>
+        <span class="q-text">Este año, el gobierno _______ (aprobar) tres nuevas leyes medioambientales. — verb: aprobar</span>
+      </legend>
+      <p id="q21-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 21">
+        <label class="option" for="q21-a">
+          <input type="radio" id="q21-a" name="q21" value="A" aria-label="Option A: aprobaba">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">aprobaba</span>
+        </label>
+        <label class="option" for="q21-b">
+          <input type="radio" id="q21-b" name="q21" value="B" aria-label="Option B: ha aprobado">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">ha aprobado</span>
+        </label>
+        <label class="option" for="q21-c">
+          <input type="radio" id="q21-c" name="q21" value="C" aria-label="Option C: había aprobado">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">había aprobado</span>
+        </label>
+        <label class="option" for="q21-d">
+          <input type="radio" id="q21-d" name="q21" value="D" aria-label="Option D: hubo aprobado">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">hubo aprobado</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q22" aria-describedby="q22-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 22">Q22.</span>
+        <span class="q-text">Mi hermana y yo siempre _______ (llevarse) bien con los inquilinos del edificio. — verb: llevarse</span>
+      </legend>
+      <p id="q22-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 22">
+        <label class="option" for="q22-a">
+          <input type="radio" id="q22-a" name="q22" value="A" aria-label="Option A: nos llevamos">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">nos llevamos</span>
+        </label>
+        <label class="option" for="q22-b">
+          <input type="radio" id="q22-b" name="q22" value="B" aria-label="Option B: nos hemos llevado">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">nos hemos llevado</span>
+        </label>
+        <label class="option" for="q22-c">
+          <input type="radio" id="q22-c" name="q22" value="C" aria-label="Option C: nos llevábamos">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">nos llevábamos</span>
+        </label>
+        <label class="option" for="q22-d">
+          <input type="radio" id="q22-d" name="q22" value="D" aria-label="Option D: nos habíamos llevado">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">nos habíamos llevado</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q23" aria-describedby="q23-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 23">Q23.</span>
+        <span class="q-text">¿Cuál es el uso principal del presente perfecto?</span>
+      </legend>
+      <p id="q23-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 23">
+        <label class="option" for="q23-a">
+          <input type="radio" id="q23-a" name="q23" value="A" aria-label="Option A: Expresar acciones en el futuro">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">Expresar acciones en el futuro</span>
+        </label>
+        <label class="option" for="q23-b">
+          <input type="radio" id="q23-b" name="q23" value="B" aria-label="Option B: Narrar acciones pasadas con relevancia en el presente">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">Narrar acciones pasadas con relevancia en el presente</span>
+        </label>
+        <label class="option" for="q23-c">
+          <input type="radio" id="q23-c" name="q23" value="C" aria-label="Option C: Describir rutinas del pasado">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">Describir rutinas del pasado</span>
+        </label>
+        <label class="option" for="q23-d">
+          <input type="radio" id="q23-d" name="q23" value="D" aria-label="Option D: Expresar condiciones hipotéticas">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">Expresar condiciones hipotéticas</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q24" aria-describedby="q24-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 24">Q24.</span>
+        <span class="q-text">¿Cuál de estas oraciones es CORRECTA en presente perfecto?</span>
+      </legend>
+      <p id="q24-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 24">
+        <label class="option" for="q24-a">
+          <input type="radio" id="q24-a" name="q24" value="A" aria-label="Option A: Ayer hemos ido al mercado.">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">Ayer hemos ido al mercado.</span>
+        </label>
+        <label class="option" for="q24-b">
+          <input type="radio" id="q24-b" name="q24" value="B" aria-label="Option B: Este mes hemos reciclado mucho.">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">Este mes hemos reciclado mucho.</span>
+        </label>
+        <label class="option" for="q24-c">
+          <input type="radio" id="q24-c" name="q24" value="C" aria-label="Option C: La semana pasada han llegado tarde.">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">La semana pasada han llegado tarde.</span>
+        </label>
+        <label class="option" for="q24-d">
+          <input type="radio" id="q24-d" name="q24" value="D" aria-label="Option D: Hace dos años he vivido aquí.">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">Hace dos años he vivido aquí.</span>
+        </label>
+      </div>
+    </fieldset>  </div>
+</section>
+
+<section class="exam-section" id="secIII" aria-labelledby="secIII-h">
+  <div class="sec-header" style="background:#2e7d32">
+    <h2 id="secIII-h">Sección III — Cap. 16: Subjuntivo con Antecedentes Indefinidos</h2>
+    <span class="sec-range">Questions 25–38</span>
+  </div>
+  <div class="subsec" id="sub-III-A" aria-labelledby="sub-III-A-h">
+    <h3 id="sub-III-A-h" class="subsec-heading">Parte A: Indicativo vs. Subjuntivo</h3>
+
+    <fieldset class="question" id="q25" aria-describedby="q25-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 25">Q25.</span>
+        <span class="q-text">Busco un vecino que _______ (ayudar) con el jardín comunitario.</span>
+      </legend>
+      <p id="q25-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 25">
+        <label class="option" for="q25-a">
+          <input type="radio" id="q25-a" name="q25" value="A" aria-label="Option A: ayuda">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">ayuda</span>
+        </label>
+        <label class="option" for="q25-b">
+          <input type="radio" id="q25-b" name="q25" value="B" aria-label="Option B: ayudaba">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">ayudaba</span>
+        </label>
+        <label class="option" for="q25-c">
+          <input type="radio" id="q25-c" name="q25" value="C" aria-label="Option C: ayude">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">ayude</span>
+        </label>
+        <label class="option" for="q25-d">
+          <input type="radio" id="q25-d" name="q25" value="D" aria-label="Option D: ayudará">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">ayudará</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q26" aria-describedby="q26-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 26">Q26.</span>
+        <span class="q-text">Conozco a alguien que _______ (hablar) perfectamente el guaraní y el español.</span>
+      </legend>
+      <p id="q26-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 26">
+        <label class="option" for="q26-a">
+          <input type="radio" id="q26-a" name="q26" value="A" aria-label="Option A: hable">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">hable</span>
+        </label>
+        <label class="option" for="q26-b">
+          <input type="radio" id="q26-b" name="q26" value="B" aria-label="Option B: hablaba">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">hablaba</span>
+        </label>
+        <label class="option" for="q26-c">
+          <input type="radio" id="q26-c" name="q26" value="C" aria-label="Option C: habla">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">habla</span>
+        </label>
+        <label class="option" for="q26-d">
+          <input type="radio" id="q26-d" name="q26" value="D" aria-label="Option D: habló">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">habló</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q27" aria-describedby="q27-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 27">Q27.</span>
+        <span class="q-text">No hay nadie en este departamento que _______ (saber) reparar paneles solares.</span>
+      </legend>
+      <p id="q27-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 27">
+        <label class="option" for="q27-a">
+          <input type="radio" id="q27-a" name="q27" value="A" aria-label="Option A: sabe">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">sabe</span>
+        </label>
+        <label class="option" for="q27-b">
+          <input type="radio" id="q27-b" name="q27" value="B" aria-label="Option B: sabía">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">sabía</span>
+        </label>
+        <label class="option" for="q27-c">
+          <input type="radio" id="q27-c" name="q27" value="C" aria-label="Option C: sepa">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">sepa</span>
+        </label>
+        <label class="option" for="q27-d">
+          <input type="radio" id="q27-d" name="q27" value="D" aria-label="Option D: supiera">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">supiera</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q28" aria-describedby="q28-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 28">Q28.</span>
+        <span class="q-text">¿Hay alguien aquí que _______ (conocer) un buen arquitecto ecológico?</span>
+      </legend>
+      <p id="q28-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 28">
+        <label class="option" for="q28-a">
+          <input type="radio" id="q28-a" name="q28" value="A" aria-label="Option A: conoce">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">conoce</span>
+        </label>
+        <label class="option" for="q28-b">
+          <input type="radio" id="q28-b" name="q28" value="B" aria-label="Option B: conocía">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">conocía</span>
+        </label>
+        <label class="option" for="q28-c">
+          <input type="radio" id="q28-c" name="q28" value="C" aria-label="Option C: conoció">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">conoció</span>
+        </label>
+        <label class="option" for="q28-d">
+          <input type="radio" id="q28-d" name="q28" value="D" aria-label="Option D: conozca">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">conozca</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q29" aria-describedby="q29-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 29">Q29.</span>
+        <span class="q-text">Queremos encontrar un apartamento que _______ (tener) acceso a transporte público.</span>
+      </legend>
+      <p id="q29-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 29">
+        <label class="option" for="q29-a">
+          <input type="radio" id="q29-a" name="q29" value="A" aria-label="Option A: tiene">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">tiene</span>
+        </label>
+        <label class="option" for="q29-b">
+          <input type="radio" id="q29-b" name="q29" value="B" aria-label="Option B: tenía">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">tenía</span>
+        </label>
+        <label class="option" for="q29-c">
+          <input type="radio" id="q29-c" name="q29" value="C" aria-label="Option C: tenga">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">tenga</span>
+        </label>
+        <label class="option" for="q29-d">
+          <input type="radio" id="q29-d" name="q29" value="D" aria-label="Option D: tuvo">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">tuvo</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q30" aria-describedby="q30-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 30">Q30.</span>
+        <span class="q-text">Tengo un propietario que _______ (ser) muy justo con los inquilinos.</span>
+      </legend>
+      <p id="q30-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 30">
+        <label class="option" for="q30-a">
+          <input type="radio" id="q30-a" name="q30" value="A" aria-label="Option A: sea">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">sea</span>
+        </label>
+        <label class="option" for="q30-b">
+          <input type="radio" id="q30-b" name="q30" value="B" aria-label="Option B: era">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">era</span>
+        </label>
+        <label class="option" for="q30-c">
+          <input type="radio" id="q30-c" name="q30" value="C" aria-label="Option C: es">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">es</span>
+        </label>
+        <label class="option" for="q30-d">
+          <input type="radio" id="q30-d" name="q30" value="D" aria-label="Option D: fue">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">fue</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q31" aria-describedby="q31-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 31">Q31.</span>
+        <span class="q-text">No hay ninguna organización en esta ciudad que _______ (proteger) los humedales.</span>
+      </legend>
+      <p id="q31-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 31">
+        <label class="option" for="q31-a">
+          <input type="radio" id="q31-a" name="q31" value="A" aria-label="Option A: protege">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">protege</span>
+        </label>
+        <label class="option" for="q31-b">
+          <input type="radio" id="q31-b" name="q31" value="B" aria-label="Option B: protegía">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">protegía</span>
+        </label>
+        <label class="option" for="q31-c">
+          <input type="radio" id="q31-c" name="q31" value="C" aria-label="Option C: proteja">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">proteja</span>
+        </label>
+        <label class="option" for="q31-d">
+          <input type="radio" id="q31-d" name="q31" value="D" aria-label="Option D: protegió">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">protegió</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q32" aria-describedby="q32-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 32">Q32.</span>
+        <span class="q-text">Buscamos una pareja de estudiantes que _______ (querer) compartir el apartamento.</span>
+      </legend>
+      <p id="q32-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 32">
+        <label class="option" for="q32-a">
+          <input type="radio" id="q32-a" name="q32" value="A" aria-label="Option A: quiere">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">quiere</span>
+        </label>
+        <label class="option" for="q32-b">
+          <input type="radio" id="q32-b" name="q32" value="B" aria-label="Option B: quería">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">quería</span>
+        </label>
+        <label class="option" for="q32-c">
+          <input type="radio" id="q32-c" name="q32" value="C" aria-label="Option C: quiero">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">quiero</span>
+        </label>
+        <label class="option" for="q32-d">
+          <input type="radio" id="q32-d" name="q32" value="D" aria-label="Option D: quieran">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">quieran</span>
+        </label>
+      </div>
+    </fieldset>  </div>
+  <div class="subsec" id="sub-III-B" aria-labelledby="sub-III-B-h">
+    <h3 id="sub-III-B-h" class="subsec-heading">Parte B: Irregulares del subjuntivo — DISHES</h3>
+    <div class="info-box" role="note" style="background:#e8f5e9;border-left-color:#2e7d32"><p>Remember DISHES: Dar · Ir · Ser · Haber · Estar · Saber — these verbs have irregular present subjunctive forms.</p></div>
+
+    <fieldset class="question" id="q33" aria-describedby="q33-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 33">Q33.</span>
+        <span class="q-text">Necesitamos una solución que _______ (ser) sostenible para todos los vecinos.</span>
+      </legend>
+      <p id="q33-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 33">
+        <label class="option" for="q33-a">
+          <input type="radio" id="q33-a" name="q33" value="A" aria-label="Option A: es">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">es</span>
+        </label>
+        <label class="option" for="q33-b">
+          <input type="radio" id="q33-b" name="q33" value="B" aria-label="Option B: era">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">era</span>
+        </label>
+        <label class="option" for="q33-c">
+          <input type="radio" id="q33-c" name="q33" value="C" aria-label="Option C: sea">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">sea</span>
+        </label>
+        <label class="option" for="q33-d">
+          <input type="radio" id="q33-d" name="q33" value="D" aria-label="Option D: fue">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">fue</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q34" aria-describedby="q34-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 34">Q34.</span>
+        <span class="q-text">¿Hay alguien que _______ (ir) al ayuntamiento mañana y pueda entregar los documentos?</span>
+      </legend>
+      <p id="q34-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 34">
+        <label class="option" for="q34-a">
+          <input type="radio" id="q34-a" name="q34" value="A" aria-label="Option A: va">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">va</span>
+        </label>
+        <label class="option" for="q34-b">
+          <input type="radio" id="q34-b" name="q34" value="B" aria-label="Option B: fue">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">fue</span>
+        </label>
+        <label class="option" for="q34-c">
+          <input type="radio" id="q34-c" name="q34" value="C" aria-label="Option C: iba">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">iba</span>
+        </label>
+        <label class="option" for="q34-d">
+          <input type="radio" id="q34-d" name="q34" value="D" aria-label="Option D: vaya">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">vaya</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q35" aria-describedby="q35-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 35">Q35.</span>
+        <span class="q-text">No conozco a nadie que _______ (dar) mejores consejos medioambientales que Andrea.</span>
+      </legend>
+      <p id="q35-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 35">
+        <label class="option" for="q35-a">
+          <input type="radio" id="q35-a" name="q35" value="A" aria-label="Option A: da">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">da</span>
+        </label>
+        <label class="option" for="q35-b">
+          <input type="radio" id="q35-b" name="q35" value="B" aria-label="Option B: dio">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">dio</span>
+        </label>
+        <label class="option" for="q35-c">
+          <input type="radio" id="q35-c" name="q35" value="C" aria-label="Option C: dé">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">dé</span>
+        </label>
+        <label class="option" for="q35-d">
+          <input type="radio" id="q35-d" name="q35" value="D" aria-label="Option D: daba">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">daba</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q36" aria-describedby="q36-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 36">Q36.</span>
+        <span class="q-text">Busco un compañero de piso que _______ (estar) comprometido con el reciclaje.</span>
+      </legend>
+      <p id="q36-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 36">
+        <label class="option" for="q36-a">
+          <input type="radio" id="q36-a" name="q36" value="A" aria-label="Option A: está">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">está</span>
+        </label>
+        <label class="option" for="q36-b">
+          <input type="radio" id="q36-b" name="q36" value="B" aria-label="Option B: esté">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">esté</span>
+        </label>
+        <label class="option" for="q36-c">
+          <input type="radio" id="q36-c" name="q36" value="C" aria-label="Option C: estaba">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">estaba</span>
+        </label>
+        <label class="option" for="q36-d">
+          <input type="radio" id="q36-d" name="q36" value="D" aria-label="Option D: estaría">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">estaría</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q37" aria-describedby="q37-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 37">Q37.</span>
+        <span class="q-text">No hay ningún plan urbanístico que _______ (haber) considerado el impacto ambiental.</span>
+      </legend>
+      <p id="q37-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 37">
+        <label class="option" for="q37-a">
+          <input type="radio" id="q37-a" name="q37" value="A" aria-label="Option A: ha">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">ha</span>
+        </label>
+        <label class="option" for="q37-b">
+          <input type="radio" id="q37-b" name="q37" value="B" aria-label="Option B: haya">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">haya</span>
+        </label>
+        <label class="option" for="q37-c">
+          <input type="radio" id="q37-c" name="q37" value="C" aria-label="Option C: había">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">había</span>
+        </label>
+        <label class="option" for="q37-d">
+          <input type="radio" id="q37-d" name="q37" value="D" aria-label="Option D: hubo">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">hubo</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q38" aria-describedby="q38-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 38">Q38.</span>
+        <span class="q-text">¿Conoces a alguien que _______ (saber) instalar paneles solares en casa?</span>
+      </legend>
+      <p id="q38-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 38">
+        <label class="option" for="q38-a">
+          <input type="radio" id="q38-a" name="q38" value="A" aria-label="Option A: sabe">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">sabe</span>
+        </label>
+        <label class="option" for="q38-b">
+          <input type="radio" id="q38-b" name="q38" value="B" aria-label="Option B: supo">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">supo</span>
+        </label>
+        <label class="option" for="q38-c">
+          <input type="radio" id="q38-c" name="q38" value="C" aria-label="Option C: sabía">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">sabía</span>
+        </label>
+        <label class="option" for="q38-d">
+          <input type="radio" id="q38-d" name="q38" value="D" aria-label="Option D: sepa">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">sepa</span>
+        </label>
+      </div>
+    </fieldset>  </div>
+</section>
+
+<section class="exam-section" id="secIV" aria-labelledby="secIV-h">
+  <div class="sec-header" style="background:#bf360c">
+    <h2 id="secIV-h">Sección IV — Vocabulario y Gramática: Cierto/Falso + Asociaciones</h2>
+    <span class="sec-range">Questions 39–55</span>
+  </div>
+  <div class="subsec" id="sub-IV-A" aria-labelledby="sub-IV-A-h">
+    <h3 id="sub-IV-A-h" class="subsec-heading">Parte A: Cierto o Falso</h3>
+
+    <fieldset class="question" id="q39" aria-describedby="q39-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 39">Q39.</span>
+        <span class="q-text">El participio pasado de ABRIR es 'abrido'.</span>
+      </legend>
+      <p id="q39-hint" class="sr-only">Cierto (A) o Falso (B). Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 39">
+        <label class="option" for="q39-a">
+          <input type="radio" id="q39-a" name="q39" value="A" aria-label="Option A: Cierto">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">Cierto</span>
+        </label>
+        <label class="option" for="q39-b">
+          <input type="radio" id="q39-b" name="q39" value="B" aria-label="Option B: Falso">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">Falso</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q40" aria-describedby="q40-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 40">Q40.</span>
+        <span class="q-text">En el presente perfecto, el participio pasado concuerda en género y número con el sujeto.</span>
+      </legend>
+      <p id="q40-hint" class="sr-only">Cierto (A) o Falso (B). Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 40">
+        <label class="option" for="q40-a">
+          <input type="radio" id="q40-a" name="q40" value="A" aria-label="Option A: Cierto">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">Cierto</span>
+        </label>
+        <label class="option" for="q40-b">
+          <input type="radio" id="q40-b" name="q40" value="B" aria-label="Option B: Falso">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">Falso</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q41" aria-describedby="q41-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 41">Q41.</span>
+        <span class="q-text">'Busco un apartamento que tenga dos habitaciones' usa el subjuntivo porque el apartamento es indefinido o hipotético.</span>
+      </legend>
+      <p id="q41-hint" class="sr-only">Cierto (A) o Falso (B). Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 41">
+        <label class="option" for="q41-a">
+          <input type="radio" id="q41-a" name="q41" value="A" aria-label="Option A: Cierto">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">Cierto</span>
+        </label>
+        <label class="option" for="q41-b">
+          <input type="radio" id="q41-b" name="q41" value="B" aria-label="Option B: Falso">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">Falso</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q42" aria-describedby="q42-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 42">Q42.</span>
+        <span class="q-text">'Conozco a una persona que habla swahili' usa el indicativo porque la persona es real y conocida.</span>
+      </legend>
+      <p id="q42-hint" class="sr-only">Cierto (A) o Falso (B). Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 42">
+        <label class="option" for="q42-a">
+          <input type="radio" id="q42-a" name="q42" value="A" aria-label="Option A: Cierto">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">Cierto</span>
+        </label>
+        <label class="option" for="q42-b">
+          <input type="radio" id="q42-b" name="q42" value="B" aria-label="Option B: Falso">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">Falso</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q43" aria-describedby="q43-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 43">Q43.</span>
+        <span class="q-text">El participio pasado de PONER es 'puesto'.</span>
+      </legend>
+      <p id="q43-hint" class="sr-only">Cierto (A) o Falso (B). Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 43">
+        <label class="option" for="q43-a">
+          <input type="radio" id="q43-a" name="q43" value="A" aria-label="Option A: Cierto">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">Cierto</span>
+        </label>
+        <label class="option" for="q43-b">
+          <input type="radio" id="q43-b" name="q43" value="B" aria-label="Option B: Falso">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">Falso</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q44" aria-describedby="q44-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 44">Q44.</span>
+        <span class="q-text">'¿Han llegado los invitados?' es una oración correcta en presente perfecto.</span>
+      </legend>
+      <p id="q44-hint" class="sr-only">Cierto (A) o Falso (B). Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 44">
+        <label class="option" for="q44-a">
+          <input type="radio" id="q44-a" name="q44" value="A" aria-label="Option A: Cierto">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">Cierto</span>
+        </label>
+        <label class="option" for="q44-b">
+          <input type="radio" id="q44-b" name="q44" value="B" aria-label="Option B: Falso">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">Falso</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q45" aria-describedby="q45-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 45">Q45.</span>
+        <span class="q-text">'No hay nadie que sabe la verdad' es correcto porque la persona no existe.</span>
+      </legend>
+      <p id="q45-hint" class="sr-only">Cierto (A) o Falso (B). Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 45">
+        <label class="option" for="q45-a">
+          <input type="radio" id="q45-a" name="q45" value="A" aria-label="Option A: Cierto">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">Cierto</span>
+        </label>
+        <label class="option" for="q45-b">
+          <input type="radio" id="q45-b" name="q45" value="B" aria-label="Option B: Falso">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">Falso</span>
+        </label>
+      </div>
+    </fieldset>  </div>
+  <div class="subsec" id="sub-IV-B" aria-labelledby="sub-IV-B-h">
+    <h3 id="sub-IV-B-h" class="subsec-heading">Parte B: Vocabulario — Relaciones personales y etapas de la vida</h3>
+
+    <fieldset class="question" id="q46" aria-describedby="q46-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 46">Q46.</span>
+        <span class="q-text">Declaración formal de intención de casarse.</span>
+      </legend>
+      <p id="q46-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 46">
+        <label class="option" for="q46-a">
+          <input type="radio" id="q46-a" name="q46" value="A" aria-label="Option A: el noviazgo">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">el noviazgo</span>
+        </label>
+        <label class="option" for="q46-b">
+          <input type="radio" id="q46-b" name="q46" value="B" aria-label="Option B: el compromiso">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">el compromiso</span>
+        </label>
+        <label class="option" for="q46-c">
+          <input type="radio" id="q46-c" name="q46" value="C" aria-label="Option C: la viudez">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">la viudez</span>
+        </label>
+        <label class="option" for="q46-d">
+          <input type="radio" id="q46-d" name="q46" value="D" aria-label="Option D: la luna de miel">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">la luna de miel</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q47" aria-describedby="q47-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 47">Q47.</span>
+        <span class="q-text">Período de la vida después de la juventud y antes de la vejez.</span>
+      </legend>
+      <p id="q47-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 47">
+        <label class="option" for="q47-a">
+          <input type="radio" id="q47-a" name="q47" value="A" aria-label="Option A: la infancia">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">la infancia</span>
+        </label>
+        <label class="option" for="q47-b">
+          <input type="radio" id="q47-b" name="q47" value="B" aria-label="Option B: la adolescencia">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">la adolescencia</span>
+        </label>
+        <label class="option" for="q47-c">
+          <input type="radio" id="q47-c" name="q47" value="C" aria-label="Option C: la madurez">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">la madurez</span>
+        </label>
+        <label class="option" for="q47-d">
+          <input type="radio" id="q47-d" name="q47" value="D" aria-label="Option D: la viudez">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">la viudez</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q48" aria-describedby="q48-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 48">Q48.</span>
+        <span class="q-text">Persona que no tiene pareja ni está casada.</span>
+      </legend>
+      <p id="q48-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 48">
+        <label class="option" for="q48-a">
+          <input type="radio" id="q48-a" name="q48" value="A" aria-label="Option A: el/la viudo/a">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">el/la viudo/a</span>
+        </label>
+        <label class="option" for="q48-b">
+          <input type="radio" id="q48-b" name="q48" value="B" aria-label="Option B: recién casado/a">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">recién casado/a</span>
+        </label>
+        <label class="option" for="q48-c">
+          <input type="radio" id="q48-c" name="q48" value="C" aria-label="Option C: el/la novio/a">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">el/la novio/a</span>
+        </label>
+        <label class="option" for="q48-d">
+          <input type="radio" id="q48-d" name="q48" value="D" aria-label="Option D: el/la soltero/a">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">el/la soltero/a</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q49" aria-describedby="q49-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 49">Q49.</span>
+        <span class="q-text">Acción de prometerse matrimonio con alguien.</span>
+      </legend>
+      <p id="q49-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 49">
+        <label class="option" for="q49-a">
+          <input type="radio" id="q49-a" name="q49" value="A" aria-label="Option A: romper con">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">romper con</span>
+        </label>
+        <label class="option" for="q49-b">
+          <input type="radio" id="q49-b" name="q49" value="B" aria-label="Option B: divorciarse">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">divorciarse</span>
+        </label>
+        <label class="option" for="q49-c">
+          <input type="radio" id="q49-c" name="q49" value="C" aria-label="Option C: comprometerse con">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">comprometerse con</span>
+        </label>
+        <label class="option" for="q49-d">
+          <input type="radio" id="q49-d" name="q49" value="D" aria-label="Option D: llevarse bien">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">llevarse bien</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q50" aria-describedby="q50-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 50">Q50.</span>
+        <span class="q-text">Persona cuya pareja ha muerto.</span>
+      </legend>
+      <p id="q50-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 50">
+        <label class="option" for="q50-a">
+          <input type="radio" id="q50-a" name="q50" value="A" aria-label="Option A: el/la soltero/a">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">el/la soltero/a</span>
+        </label>
+        <label class="option" for="q50-b">
+          <input type="radio" id="q50-b" name="q50" value="B" aria-label="Option B: el/la viudo/a">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">el/la viudo/a</span>
+        </label>
+        <label class="option" for="q50-c">
+          <input type="radio" id="q50-c" name="q50" value="C" aria-label="Option C: el/la novio/a">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">el/la novio/a</span>
+        </label>
+        <label class="option" for="q50-d">
+          <input type="radio" id="q50-d" name="q50" value="D" aria-label="Option D: recién casado/a">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">recién casado/a</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q51" aria-describedby="q51-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 51">Q51.</span>
+        <span class="q-text">Primera etapa de la vida, antes de la adolescencia.</span>
+      </legend>
+      <p id="q51-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 51">
+        <label class="option" for="q51-a">
+          <input type="radio" id="q51-a" name="q51" value="A" aria-label="Option A: la madurez">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">la madurez</span>
+        </label>
+        <label class="option" for="q51-b">
+          <input type="radio" id="q51-b" name="q51" value="B" aria-label="Option B: la vejez">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">la vejez</span>
+        </label>
+        <label class="option" for="q51-c">
+          <input type="radio" id="q51-c" name="q51" value="C" aria-label="Option C: la infancia">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">la infancia</span>
+        </label>
+        <label class="option" for="q51-d">
+          <input type="radio" id="q51-d" name="q51" value="D" aria-label="Option D: la juventud">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">la juventud</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q52" aria-describedby="q52-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 52">Q52.</span>
+        <span class="q-text">Sentimiento intenso de amor romántico hacia alguien.</span>
+      </legend>
+      <p id="q52-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 52">
+        <label class="option" for="q52-a">
+          <input type="radio" id="q52-a" name="q52" value="A" aria-label="Option A: el cariño">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">el cariño</span>
+        </label>
+        <label class="option" for="q52-b">
+          <input type="radio" id="q52-b" name="q52" value="B" aria-label="Option B: la amistad">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">la amistad</span>
+        </label>
+        <label class="option" for="q52-c">
+          <input type="radio" id="q52-c" name="q52" value="C" aria-label="Option C: el enamoramiento">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">el enamoramiento</span>
+        </label>
+        <label class="option" for="q52-d">
+          <input type="radio" id="q52-d" name="q52" value="D" aria-label="Option D: la viudez">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">la viudez</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q53" aria-describedby="q53-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 53">Q53.</span>
+        <span class="q-text">Etapa final de la vida, después de la madurez.</span>
+      </legend>
+      <p id="q53-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 53">
+        <label class="option" for="q53-a">
+          <input type="radio" id="q53-a" name="q53" value="A" aria-label="Option A: la infancia">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">la infancia</span>
+        </label>
+        <label class="option" for="q53-b">
+          <input type="radio" id="q53-b" name="q53" value="B" aria-label="Option B: la juventud">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">la juventud</span>
+        </label>
+        <label class="option" for="q53-c">
+          <input type="radio" id="q53-c" name="q53" value="C" aria-label="Option C: la madurez">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">la madurez</span>
+        </label>
+        <label class="option" for="q53-d">
+          <input type="radio" id="q53-d" name="q53" value="D" aria-label="Option D: la vejez">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">la vejez</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q54" aria-describedby="q54-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 54">Q54.</span>
+        <span class="q-text">Acción de casarse legalmente con alguien.</span>
+      </legend>
+      <p id="q54-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 54">
+        <label class="option" for="q54-a">
+          <input type="radio" id="q54-a" name="q54" value="A" aria-label="Option A: romper con">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">romper con</span>
+        </label>
+        <label class="option" for="q54-b">
+          <input type="radio" id="q54-b" name="q54" value="B" aria-label="Option B: llevarse mal">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">llevarse mal</span>
+        </label>
+        <label class="option" for="q54-c">
+          <input type="radio" id="q54-c" name="q54" value="C" aria-label="Option C: casarse con">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">casarse con</span>
+        </label>
+        <label class="option" for="q54-d">
+          <input type="radio" id="q54-d" name="q54" value="D" aria-label="Option D: comprometerse">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">comprometerse</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q55" aria-describedby="q55-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 55">Q55.</span>
+        <span class="q-text">Acción de terminar una relación amorosa.</span>
+      </legend>
+      <p id="q55-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 55">
+        <label class="option" for="q55-a">
+          <input type="radio" id="q55-a" name="q55" value="A" aria-label="Option A: comprometerse con">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">comprometerse con</span>
+        </label>
+        <label class="option" for="q55-b">
+          <input type="radio" id="q55-b" name="q55" value="B" aria-label="Option B: casarse con">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">casarse con</span>
+        </label>
+        <label class="option" for="q55-c">
+          <input type="radio" id="q55-c" name="q55" value="C" aria-label="Option C: llevarse bien">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">llevarse bien</span>
+        </label>
+        <label class="option" for="q55-d">
+          <input type="radio" id="q55-d" name="q55" value="D" aria-label="Option D: romper con">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">romper con</span>
+        </label>
+      </div>
+    </fieldset>  </div>
+</section>
+
+<section class="exam-section" id="secV" aria-labelledby="secV-h">
+  <div class="sec-header" style="background:#4a148c">
+    <h2 id="secV-h">Sección V — Pluscuamperfecto y Presente Perfecto de Subjuntivo</h2>
+    <span class="sec-range">Questions 56–63</span>
+  </div>
+  <div class="subsec" id="sub-V-A" aria-labelledby="sub-V-A-h">
+    <h3 id="sub-V-A-h" class="subsec-heading">Parte A: El Pluscuamperfecto — había/habías/había… + participio</h3>
+    <div class="info-box" role="note" style="background:#f3e5f5;border-left-color:#4a148c"><p>The past perfect expresses an action that occurred BEFORE another past action. Formation: HABER (imperfect: había) + invariable past participle.</p></div>
+
+    <fieldset class="question" id="q56" aria-describedby="q56-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 56">Q56.</span>
+        <span class="q-text">Antes de mudarse, la familia nunca _______ (vivir) tan cerca de una zona industrial. — verb: vivir</span>
+      </legend>
+      <p id="q56-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 56">
+        <label class="option" for="q56-a">
+          <input type="radio" id="q56-a" name="q56" value="A" aria-label="Option A: ha vivido">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">ha vivido</span>
+        </label>
+        <label class="option" for="q56-b">
+          <input type="radio" id="q56-b" name="q56" value="B" aria-label="Option B: haya vivido">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">haya vivido</span>
+        </label>
+        <label class="option" for="q56-c">
+          <input type="radio" id="q56-c" name="q56" value="C" aria-label="Option C: había vivido">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">había vivido</span>
+        </label>
+        <label class="option" for="q56-d">
+          <input type="radio" id="q56-d" name="q56" value="D" aria-label="Option D: hubo vivido">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">hubo vivido</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q57" aria-describedby="q57-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 57">Q57.</span>
+        <span class="q-text">Cuando llegamos al río, los activistas ya _______ (recoger) toda la basura de la orilla. — verb: recoger</span>
+      </legend>
+      <p id="q57-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 57">
+        <label class="option" for="q57-a">
+          <input type="radio" id="q57-a" name="q57" value="A" aria-label="Option A: hemos recogido">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">hemos recogido</span>
+        </label>
+        <label class="option" for="q57-b">
+          <input type="radio" id="q57-b" name="q57" value="B" aria-label="Option B: habían recogido">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">habían recogido</span>
+        </label>
+        <label class="option" for="q57-c">
+          <input type="radio" id="q57-c" name="q57" value="C" aria-label="Option C: hayan recogido">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">hayan recogido</span>
+        </label>
+        <label class="option" for="q57-d">
+          <input type="radio" id="q57-d" name="q57" value="D" aria-label="Option D: habemos recogido">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">habemos recogido</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q58" aria-describedby="q58-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 58">Q58.</span>
+        <span class="q-text">Antes de este proyecto, ella nunca _______ (trabajar) con una ONG medioambiental. — verb: trabajar</span>
+      </legend>
+      <p id="q58-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 58">
+        <label class="option" for="q58-a">
+          <input type="radio" id="q58-a" name="q58" value="A" aria-label="Option A: ha trabajado">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">ha trabajado</span>
+        </label>
+        <label class="option" for="q58-b">
+          <input type="radio" id="q58-b" name="q58" value="B" aria-label="Option B: haya trabajado">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">haya trabajado</span>
+        </label>
+        <label class="option" for="q58-c">
+          <input type="radio" id="q58-c" name="q58" value="C" aria-label="Option C: había trabajado">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">había trabajado</span>
+        </label>
+        <label class="option" for="q58-d">
+          <input type="radio" id="q58-d" name="q58" value="D" aria-label="Option D: hubiera trabajado">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">hubiera trabajado</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q59" aria-describedby="q59-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 59">Q59.</span>
+        <span class="q-text">¿Cuál de estas oraciones usa el pluscuamperfecto correctamente?</span>
+      </legend>
+      <p id="q59-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 59">
+        <label class="option" for="q59-a">
+          <input type="radio" id="q59-a" name="q59" value="A" aria-label="Option A: Cuando llegué, él ya ha salido.">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">Cuando llegué, él ya ha salido.</span>
+        </label>
+        <label class="option" for="q59-b">
+          <input type="radio" id="q59-b" name="q59" value="B" aria-label="Option B: Cuando llegué, él ya había salido.">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">Cuando llegué, él ya había salido.</span>
+        </label>
+        <label class="option" for="q59-c">
+          <input type="radio" id="q59-c" name="q59" value="C" aria-label="Option C: Cuando llegué, él ya haya salido.">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">Cuando llegué, él ya haya salido.</span>
+        </label>
+        <label class="option" for="q59-d">
+          <input type="radio" id="q59-d" name="q59" value="D" aria-label="Option D: Cuando llegué, él ya salió.">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">Cuando llegué, él ya salió.</span>
+        </label>
+      </div>
+    </fieldset>  </div>
+  <div class="subsec" id="sub-V-B" aria-labelledby="sub-V-B-h">
+    <h3 id="sub-V-B-h" class="subsec-heading">Parte B: El Presente Perfecto de Subjuntivo — haya/hayas/haya… + participio</h3>
+    <div class="info-box" role="note" style="background:#f3e5f5;border-left-color:#4a148c"><p>The present perfect subjunctive is used when the main clause requires subjunctive and the subordinate action is past. Formation: haya/hayas/haya + invariable past participle. Remember: haya = H of DISHES.</p></div>
+
+    <fieldset class="question" id="q60" aria-describedby="q60-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 60">Q60.</span>
+        <span class="q-text">Me alegra que el barrio _______ (instalar) paneles solares en los edificios públicos. — verb: instalar</span>
+      </legend>
+      <p id="q60-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 60">
+        <label class="option" for="q60-a">
+          <input type="radio" id="q60-a" name="q60" value="A" aria-label="Option A: ha instalado">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">ha instalado</span>
+        </label>
+        <label class="option" for="q60-b">
+          <input type="radio" id="q60-b" name="q60" value="B" aria-label="Option B: instaló">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">instaló</span>
+        </label>
+        <label class="option" for="q60-c">
+          <input type="radio" id="q60-c" name="q60" value="C" aria-label="Option C: haya instalado">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">haya instalado</span>
+        </label>
+        <label class="option" for="q60-d">
+          <input type="radio" id="q60-d" name="q60" value="D" aria-label="Option D: había instalado">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">había instalado</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q61" aria-describedby="q61-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 61">Q61.</span>
+        <span class="q-text">Es bueno que los vecinos _______ (organizarse) para limpiar el parque. — verb: organizarse</span>
+      </legend>
+      <p id="q61-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 61">
+        <label class="option" for="q61-a">
+          <input type="radio" id="q61-a" name="q61" value="A" aria-label="Option A: se han organizado">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">se han organizado</span>
+        </label>
+        <label class="option" for="q61-b">
+          <input type="radio" id="q61-b" name="q61" value="B" aria-label="Option B: se hayan organizado">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">se hayan organizado</span>
+        </label>
+        <label class="option" for="q61-c">
+          <input type="radio" id="q61-c" name="q61" value="C" aria-label="Option C: se habían organizado">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">se habían organizado</span>
+        </label>
+        <label class="option" for="q61-d">
+          <input type="radio" id="q61-d" name="q61" value="D" aria-label="Option D: se hubieran organizado">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">se hubieran organizado</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q62" aria-describedby="q62-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 62">Q62.</span>
+        <span class="q-text">No creo que la empresa _______ (resolver) el problema de contaminación todavía. — verb: resolver</span>
+      </legend>
+      <p id="q62-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 62">
+        <label class="option" for="q62-a">
+          <input type="radio" id="q62-a" name="q62" value="A" aria-label="Option A: ha resuelto">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">ha resuelto</span>
+        </label>
+        <label class="option" for="q62-b">
+          <input type="radio" id="q62-b" name="q62" value="B" aria-label="Option B: haya resuelto">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">haya resuelto</span>
+        </label>
+        <label class="option" for="q62-c">
+          <input type="radio" id="q62-c" name="q62" value="C" aria-label="Option C: había resuelto">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">había resuelto</span>
+        </label>
+        <label class="option" for="q62-d">
+          <input type="radio" id="q62-d" name="q62" value="D" aria-label="Option D: resolvió">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">resolvió</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="question" id="q63" aria-describedby="q63-hint">
+      <legend>
+        <span class="q-num" aria-label="Question 63">Q63.</span>
+        <span class="q-text">Estamos seguros de que muchas familias _______ (sufrir) por la contaminación del río. — verb: sufrir</span>
+      </legend>
+      <p id="q63-hint" class="sr-only">Select one answer. Use arrow keys to move between options.</p>
+      <div class="options" role="radiogroup" aria-label="Options for question 63">
+        <label class="option" for="q63-a">
+          <input type="radio" id="q63-a" name="q63" value="A" aria-label="Option A: hayan sufrido">
+          <span class="opt-letter" aria-hidden="true">A</span>
+          <span class="opt-text">hayan sufrido</span>
+        </label>
+        <label class="option" for="q63-b">
+          <input type="radio" id="q63-b" name="q63" value="B" aria-label="Option B: hubieran sufrido">
+          <span class="opt-letter" aria-hidden="true">B</span>
+          <span class="opt-text">hubieran sufrido</span>
+        </label>
+        <label class="option" for="q63-c">
+          <input type="radio" id="q63-c" name="q63" value="C" aria-label="Option C: han sufrido">
+          <span class="opt-letter" aria-hidden="true">C</span>
+          <span class="opt-text">han sufrido</span>
+        </label>
+        <label class="option" for="q63-d">
+          <input type="radio" id="q63-d" name="q63" value="D" aria-label="Option D: habrán sufrido">
+          <span class="opt-letter" aria-hidden="true">D</span>
+          <span class="opt-text">habrán sufrido</span>
+        </label>
+      </div>
+    </fieldset>  </div>
+</section>
+
+<section class="written-section" id="sec-cultura" aria-labelledby="cultura-h">
+  <h2 id="cultura-h">Sección VI: Cultura — La Argentina y el Uruguay (Written — on this page)</h2>
+  <p class="sr-only">This section does not go on the scantron. Type your answers in the text areas below.</p>
+
+  <div class="written-q"><p><label for="cult-1">1. What is the capital of Argentina? And of Uruguay?</label></p>
+    <textarea id="cult-1" name="cult-1" rows="2" aria-label="Question 1: Capitals of Argentina and Uruguay"></textarea></div>
+  <div class="written-q"><p><label for="cult-2">2. Name TWO geographical features of Argentina (regions, rivers, landmarks).</label></p>
+    <textarea id="cult-2" name="cult-2" rows="3" aria-label="Question 2: Two geographical features of Argentina"></textarea></div>
+  <div class="written-q"><p><label for="cult-3">3. What are the Cataratas del Iguazú and in which countries are they found?</label></p>
+    <textarea id="cult-3" name="cult-3" rows="3" aria-label="Question 3: Cataratas del Iguazú"></textarea></div>
+  <div class="written-q"><p><label for="cult-4">4. What is 'voseo' and in which Southern Cone countries is it used?</label></p>
+    <textarea id="cult-4" name="cult-4" rows="3" aria-label="Question 4: Voseo"></textarea></div>
+  <div class="written-q"><p><label for="cult-5">5. Additional question (your instructor will provide this).</label></p>
+    <textarea id="cult-5" name="cult-5" rows="4" aria-label="Question 5: Additional"></textarea></div>
+</section>
+</form>
+</div>
+</main>
+<div class="submit-bar" role="contentinfo">
+  <span class="submit-note" aria-live="polite" id="submit-note">Read questions here → bubble answers on your paper scantron → upload photo to Moodle.</span>
+  <button class="submit-btn" onclick="reviewAnswers()" aria-describedby="submit-note">Check which questions I've read</button>
+</div>
+<script>
+const TOTAL=63;
+function updateProgress(){
+  const n=document.querySelectorAll('input[type=radio]:checked').length;
+  const pct=Math.round(n/TOTAL*100);
+  document.getElementById('prog-count').textContent=n+' of '+TOTAL+' reviewed';
+  document.getElementById('prog-bar').style.width=pct+'%';
+  document.getElementById('prog-bar').setAttribute('aria-valuenow',pct);
+  document.getElementById('live-progress').textContent='Progress: '+n+' of 63 questions reviewed on screen.';
+}
+document.querySelectorAll('input[type=radio]').forEach(r=>r.addEventListener('change',updateProgress));
+function toggleHC(){
+  const on=document.body.classList.toggle('high-contrast');
+  document.getElementById('hc-btn').setAttribute('aria-pressed',on);
+  document.getElementById('live-announce').textContent=on?'High contrast mode on.':'High contrast mode off.';
+}
+function setSize(s){
+  document.body.classList.remove('sz-lg','sz-xl');
+  if(s==='lg')document.body.classList.add('sz-lg');
+  if(s==='xl')document.body.classList.add('sz-xl');
+  document.querySelectorAll('.sz-btn').forEach(b=>b.removeAttribute('aria-current'));
+  document.getElementById('sz-'+s).setAttribute('aria-current','true');
+  const lb={nm:'Normal',lg:'Large',xl:'Extra large'};
+  document.getElementById('live-announce').textContent=lb[s]+' text activated.';
+}
+function reviewAnswers(){
+  const n=document.querySelectorAll('input[type=radio]:checked').length;
+  const u=TOTAL-n;
+  let msg=u===0?'All 63 questions reviewed. Remember to upload your completed scantron to Moodle.':u+' question'+(u>1?'s':'')+' not yet reviewed. ';
+  if(u>0){
+    for(let fs of document.querySelectorAll('fieldset.question')){
+      if(!fs.querySelector('input:checked')){
+        msg+='First unreviewed: Question '+fs.id.replace('q','')+'. Make sure you have marked this on your scantron.';
+        fs.scrollIntoView({behavior:'smooth',block:'center'});
+        fs.querySelector('input[type=radio]').focus();
+        break;
+      }
+    }
+  }
+  document.getElementById('live-announce').textContent=msg;
+  document.getElementById('submit-note').textContent=msg;
+}
+</script>
+
+</body></html>
